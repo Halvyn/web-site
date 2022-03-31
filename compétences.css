@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+img{
+	max-width: 100%; /* rend les images responsives */
+}
+
+.menu{
+	display: flex;
+	flex-wrap: wrap; /* obligatoire pour le responsive */
+
+	justify-content: space-between;
+}
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+}
+
+nav ul li a{
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-left: 20px;
+
+	display: inline-block; /* pour que le lien prenne en compte les margin et padding */
+
+	color: #8c3034;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+nav ul li a:hover,
+.actif{
+	background: white;
+}
+
+header{
+	background-color: #b24a50;
+	background-image: url(img/bg-rouge.png);
+	background-size: cover;
+}
+
+.conteneur{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+    justify-content: space-between
+}
+
+h1,
+h4{
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	font-size: 38px;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+
+p{
+	font-size: 14px;
+}
+
+header p{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 20px;
+	color: #8c3034;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+}
+
+header section article{
+	text-align: center;
+	background-color: #c35058;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 30%;
+	margin-bottom: 20px;
+    justify-content: space-between
+
+}
+
+header section{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+}
+
+.save-your-spots{
+	background-color: #f0efea;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.share{
+	background-color: #e8e5dc;
+}
+
+.save-your-spots div,
+.share div{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+.save-your-spots .texte,
+.share .image{
+	width: 50%;
+}
+
+.save-your-spots .image{
+	width: 30%;
+}
+
+.share .texte{
+	width: 40%;
+}
+
+h3{
+	font-size: 40px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.save-your-spots p,
+.share p{
+	font-size: 25px;
+	color: #000000;
+}
+
+footer{
+	background-image: url(img/paris.jpg);
+	background-size: cover;
+
+	text-align: center;
+	color: white;
+
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+h4{
+	margin-bottom: 20px;
+}
+
+footer a{
+	display: block;
+
+	border: 2px solid white;
+	color: #c35058;
+	text-decoration: none;
+
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 40px;
+
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+footer a:hover{
+	background-color: white;
+	color: #8c3034;
+}
+
+@media(max-width: 900px){
+	.conteneur{
+		width: 96%;
+	}
+
+	header section article{
+		width: 48%;
+	}
+
+	.save-your-spots .image{
+		display: none;
+	}
+
+	.save-your-spots,
+	.share .texte{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.share div{
+		display: block;
+	}
+}
+
+@media (max-width: 700px){
+	.menu{
+		display: block;
+	}
+
+	nav ul li a{
+		margin-left: 0;
+	}
+
+	nav{
+		margin-top: 20px;
+	}
+
+	header section article{
+		width: 100%;
+	}
+}
+BODY {
+	background-color: #8c3034;
+}
